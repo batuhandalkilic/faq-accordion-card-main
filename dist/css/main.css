@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+img {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(273deg, 75%, 66%);
+}
+body .box {
+  width: 200px;
+  position: absolute;
+  top: 19.375rem;
+  left: 5.625rem;
+  z-index: 2;
+}
+
+.card {
+  max-width: 68.75rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  border-radius: 30px;
+  box-shadow: inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(240deg, 5%, 91%);
+  overflow: hidden;
+}
+.card i {
+  width: 20px;
+  height: 20px;
+}
+.card .pattern {
+  position: absolute;
+  top: -320px;
+  left: -550px;
+}
+.card-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 400px;
+  overflow: hidden;
+}
+.card-img .women {
+  position: relative;
+  left: -70px;
+  z-index: 10;
+}
+.card .faq {
+  width: 500px;
+  height: 550px;
+  display: flex;
+  align-items: center;
+}
+.card .faq ul {
+  width: 70%;
+}
+.card .faq li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(240deg, 6%, 50%);
+}
+.card .faq li p {
+  color: hsl(238deg, 29%, 16%);
+}
+.card .faq .answer {
+  display: none;
+  font-size: 12px;
+  padding-top: 1rem;
+  color: hsl(237deg, 12%, 33%);
+}
+
+@media (max-width: 450px) {
+  body {
+    padding: 1rem;
+  }
+  body .box {
+    width: 120px;
+    position: absolute;
+    top: 5rem;
+    left: 3rem;
+    z-index: 2;
+  }
+
+  .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    overflow: visible;
+  }
+  .card-img {
+    flex: 1 0 300px;
+    overflow: visible;
+  }
+  .card-img .women {
+    width: 300px;
+    position: relative;
+    top: -150px;
+    left: 0px;
+    z-index: 10;
+  }
+  .card .pattern {
+    width: 300px;
+    position: absolute;
+    top: -150px;
+    left: 35px;
+  }
+  .card .faq {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -200px;
+  }
+  .card .faq ul {
+    width: 85%;
+  }
+  .card .faq ul h1 {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
